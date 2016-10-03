@@ -12,13 +12,13 @@ public class ex03_105021038 {
 
 		Scanner scn=new Scanner(System.in);
 		char ch1=scn.next().charAt(0);
-		int v1=ch1-'a';
-		if(v1>=0&&v1<26){
-			System.out.print('A');
+		int v1=ch1;
+		if(v1>=65&&v1<=90){
+			System.out.print((char)((int)ch1+32));
 		}else{
-			v1=ch1-'A';
-			if(v1>=0&&v1<26){
-				System.out.print('a');
+			v1=ch1;
+			if(v1>=97&&v1<122){
+				System.out.print((char)((int)ch1-32));
 			}
 		}
 		
