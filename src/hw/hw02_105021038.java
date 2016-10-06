@@ -7,23 +7,28 @@ public class hw02_105021038 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 Scanner scn=new Scanner(System.in);
-System.out.println("請輸入幾個數");
-int v1=scn.nextInt();
+
+int i=1;
 int a=0;
 int b=0;
 int c=0;
-int data[]=new int[v1];
-for(int i=0;i<v1;i++){
-	data[i]=scn.nextInt();
-}
-for(int i=0;i<v1;i++){
-	if(data[i]>0){
-		a++;
-		
-	}else if(data[i]==0){
-		b++;
-	}else {
-		c++;
+while(i==1){
+	System.out.println("請輸入一個整數");
+	int v1=scn.nextInt();
+	if(v1>0)
+	{
+		a=a+1;
+	}else if(v1==0)
+	{
+		b=b+1;
+	}else if(v1<0)
+	{
+		c=c+1;
+	}System.out.println("是否繼續輸入(1=要 2=不要)");
+	int v2=scn.nextInt();
+	if(v2==2)
+	{
+		i=0;
 	}
 }
 System.out.println("正數"+a+"零"+b+"負數"+c);
